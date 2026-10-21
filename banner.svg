@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="LeetCode solutions banner with a Java editor and an Accepted verdict">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14110A"/><stop offset="1" stop-color="#241A08"/></linearGradient>
+    <pattern id="g" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#FFA116" stroke-opacity=".06"/></pattern>
+  </defs>
+  <style>
+    text{white-space:pre}
+    .t{font-family:'Segoe UI',system-ui,-apple-system,Helvetica,Arial,sans-serif}.m{font-family:ui-monospace,Consolas,monospace}
+    .ln{opacity:0;animation:ln 9s steps(1) infinite}
+    .l1{animation-delay:.3s}.l2{animation-delay:.8s}.l3{animation-delay:1.3s}.l4{animation-delay:1.8s}.l5{animation-delay:2.3s}.l6{animation-delay:2.8s}.l7{animation-delay:3.3s}
+    @keyframes ln{0%{opacity:1}93%{opacity:1}100%{opacity:0}}
+    .ok{opacity:0;animation:ok 9s ease-out infinite;animation-delay:4.2s;transform-box:fill-box;transform-origin:center}
+    @keyframes ok{0%{opacity:0;transform:scale(.8)}5%{opacity:1;transform:scale(1.06)}9%{transform:scale(1)}50%{opacity:1}53%{opacity:0}100%{opacity:0}}
+    .bar{animation:grow 9s ease-out infinite}@keyframes grow{0%{transform:scaleX(0)}15%,92%{transform:scaleX(1)}100%{transform:scaleX(0)}}
+    .b1{transform-origin:66px 0}.b2{transform-origin:66px 0;animation-delay:.3s}.b3{transform-origin:66px 0;animation-delay:.6s}
+    .cur{animation:cur 1s steps(1) infinite}@keyframes cur{50%{opacity:0}}
+  </style>
+  <rect width="1200" height="320" rx="22" fill="url(#bg)"/><rect width="1200" height="320" rx="22" fill="url(#g)"/>
+
+  <text x="64" y="104" class="t" font-size="52" font-weight="700" fill="#FFF7E6" letter-spacing="-1.5">LeetCode Solutions</text>
+  <text x="66" y="146" class="t" font-size="21" fill="#FFC56B">Clean Java solutions · one problem at a time</text>
+  <!-- difficulty bars -->
+  <g class="m" font-size="13" fill="#FDE7C2">
+    <text x="66" y="196">Easy</text><rect x="66" y="204" width="300" height="8" rx="4" fill="#3A2E14"/><rect class="bar b1" x="66" y="204" width="210" height="8" rx="4" fill="#00B8A3"/>
+    <text x="66" y="236">Medium</text><rect x="66" y="244" width="300" height="8" rx="4" fill="#3A2E14"/><rect class="bar b2" x="66" y="244" width="140" height="8" rx="4" fill="#FFC01E"/>
+    <text x="66" y="276">Hard</text><rect x="66" y="284" width="300" height="8" rx="4" fill="#3A2E14"/><rect class="bar b3" x="66" y="284" width="60" height="8" rx="4" fill="#FF375F"/>
+  </g>
+
+  <!-- editor -->
+  <g class="m" font-size="13.5">
+    <rect x="600" y="30" width="560" height="260" rx="14" fill="#0F0D08" stroke="#FFA116" stroke-opacity=".35"/>
+    <circle cx="624" cy="52" r="6" fill="#FF5F57"/><circle cx="644" cy="52" r="6" fill="#FEBC2E"/><circle cx="664" cy="52" r="6" fill="#28C840"/>
+    <text x="1040" y="56" fill="#7A6A4F">Solution.java</text>
+    <g class="ln l1"><text x="624" y="92"><tspan fill="#C792EA">class</tspan><tspan fill="#FFF7E6"> Solution {</tspan></text></g>
+    <g class="ln l2"><text x="624" y="116"><tspan fill="#FFF7E6">  </tspan><tspan fill="#C792EA">TreeNode</tspan><tspan fill="#82AAFF"> insert</tspan><tspan fill="#FFF7E6">(TreeNode root, </tspan><tspan fill="#C792EA">int</tspan><tspan fill="#FFF7E6"> val) {</tspan></text></g>
+    <g class="ln l3"><text x="624" y="140"><tspan fill="#FFF7E6">    </tspan><tspan fill="#C792EA">if</tspan><tspan fill="#FFF7E6"> (root == </tspan><tspan fill="#F78C6C">null</tspan><tspan fill="#FFF7E6">) </tspan><tspan fill="#C792EA">return new</tspan><tspan fill="#FFF7E6"> TreeNode(val);</tspan></text></g>
+    <g class="ln l4"><text x="624" y="164"><tspan fill="#FFF7E6">    </tspan><tspan fill="#C792EA">if</tspan><tspan fill="#FFF7E6"> (val &lt; root.val) root.left = insert(root.left, val);</tspan></text></g>
+    <g class="ln l5"><text x="624" y="188"><tspan fill="#FFF7E6">    </tspan><tspan fill="#C792EA">else</tspan><tspan fill="#FFF7E6"> root.right = insert(root.right, val);</tspan></text></g>
+    <g class="ln l6"><text x="624" y="212"><tspan fill="#FFF7E6">    </tspan><tspan fill="#C792EA">return</tspan><tspan fill="#FFF7E6"> root;</tspan></text></g>
+    <g class="ln l7"><text x="624" y="236" fill="#FFF7E6">  }  }</text></g>
+    <rect class="cur" x="676" y="226" width="8" height="14" fill="#FFA116" opacity=".8"/>
+    <g class="ok">
+      <rect x="900" y="232" width="236" height="44" rx="10" fill="#0E2A22" stroke="#00B8A3"/>
+      <text x="918" y="260" class="t" font-size="17" font-weight="700" fill="#2CBB5D">✓ Accepted</text>
+      <text x="1032" y="260" fill="#9DE7C8" font-size="12.5">0 ms · 100%</text>
+    </g>
+  </g>
+</svg>
