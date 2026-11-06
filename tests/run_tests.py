@@ -33,6 +33,7 @@ T = {
 "1672": 'H.eq(s.maximumWealth(new int[][]{{1,5},{7,3},{3,5}}),10); H.eq(s.maximumWealth(new int[][]{{2,8,7},{7,1,3},{1,9,5}}),17);',
 "1920": 'H.eq(H.a(s.buildArray(new int[]{0,2,1,5,3,4})),"[0, 1, 2, 4, 5, 3]");',
 "1929": 'H.eq(H.a(s.getConcatenation(new int[]{1,2,1})),"[1, 2, 1, 1, 2, 1]");',
+"2747": 'H.eq(H.a(s.countServers(3,new int[][]{{1,3},{2,6},{1,5}},5,new int[]{10,11})),"[1, 2]"); H.eq(H.a(s.countServers(3,new int[][]{{2,4},{2,1},{1,2},{3,1}},2,new int[]{3,4})),"[0, 1]"); H.eq(H.a(s.countServers(2,new int[][]{{1,2},{1,2}},1,new int[]{2,4,3})),"[1, 2, 1]");',
 "3483": 'H.eq(s.totalNumbers(new int[]{1,2,3,4}),12); H.eq(s.totalNumbers(new int[]{0,2,2}),2); H.eq(s.totalNumbers(new int[]{6,6,6}),1); H.eq(s.totalNumbers(new int[]{1,3,5}),0);',
 "3550": 'H.eq(s.smallestIndex(new int[]{1,3,2}),2); H.eq(s.smallestIndex(new int[]{1,10,11}),1); H.eq(s.smallestIndex(new int[]{1,2,3}),-1);',
 "3551": 'H.eq(s.minSwaps(new int[]{37,100}),1); H.eq(s.minSwaps(new int[]{22,14,33,7}),0); H.eq(s.minSwaps(new int[]{18,43,34,16}),2);',

@@ -13,9 +13,9 @@
 
 <p>
 <img src="https://img.shields.io/badge/Easy-36-00B8A3?style=flat-square" alt="Easy"/>
-<img src="https://img.shields.io/badge/Medium-20-FFC01E?style=flat-square" alt="Medium"/>
+<img src="https://img.shields.io/badge/Medium-21-FFC01E?style=flat-square" alt="Medium"/>
 <img src="https://img.shields.io/badge/Hard-7-FF375F?style=flat-square" alt="Hard"/>
-<img src="https://img.shields.io/badge/Total-63-8B5CF6?style=flat-square" alt="Total"/>
+<img src="https://img.shields.io/badge/Total-64-8B5CF6?style=flat-square" alt="Total"/>
 </p>
 
 **[🎮 Player card](#-player-card)** · **[👾 Boss fights](#-boss-fights)** · **[📚 Solutions](#-solutions)** · **[🗂️ By topic](#%EF%B8%8F-by-topic)** · **[🪤 Traps](#-traps-i-learned-to-dodge)** · **[🎯 Goals](#-goals)**
@@ -49,15 +49,15 @@ I'm learning data structures and algorithms in **Java**, starting from zero and 
 ```text
 +--------------------------------------------------------------+
 |  PLAYER   Hemashree                    CLASS   Java Knight   |
-|  LEVEL    63 problems slain            NEXT    100           |
-|  XP       [###################-----------]  63%              |
+|  LEVEL    64 problems slain            NEXT    100           |
+|  XP       [###################-----------]  64%              |
 |                                                              |
 |  EASY   36  ####################################             |
-|  MEDIUM 20  ####################                             |
+|  MEDIUM 21  #####################                            |
 |  HARD    7  #######                                          |
 |                                                              |
 |  PASSIVE  O(1) extra space in 35 solutions                   |
-|  ARMOR    56 Java solutions auto-tested on every push        |
+|  ARMOR    57 Java solutions auto-tested on every push        |
 |  QUEST    Binary Search Trees (in progress)                  |
 +--------------------------------------------------------------+
 ```
@@ -140,6 +140,7 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 | 1920 | [Build Array from Permutation](https://leetcode.com/problems/build-array-from-permutation/) | 🟢 Easy | Arrays | [Java](./arrays/1920-build-array-from-permutation/Solution.java) · [📖](./arrays/1920-build-array-from-permutation/README.md) | `O(n)` | `O(n)` |
 | 1929 | [Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) | 🟢 Easy | Arrays | [Java](./arrays/1929-concatenation-of-array/Solution.java) · [📖](./arrays/1929-concatenation-of-array/README.md) | `O(n)` | `O(n)` |
 | 2667 | [Create Hello World Function](https://leetcode.com/problems/create-hello-world-function/) | 🟢 Easy | JavaScript | [JS](./javascript/2667-create-hello-world-function/solution.js) · [📖](./javascript/2667-create-hello-world-function/README.md) | `O(1)` | `O(1)` |
+| 2747 | [Count Zero Request Servers](https://leetcode.com/problems/count-zero-request-servers/) | 🟡 Medium | Sliding Window | [Java](./two-pointers/2747-count-zero-request-servers/Solution.java) · [📖](./two-pointers/2747-count-zero-request-servers/README.md) | `O(L log L + Q log Q)` | `O(n+Q)` |
 | 2906 | [Construct Product Matrix](https://leetcode.com/problems/construct-product-matrix/) | 🟡 Medium | Matrix / Prefix | [Java](./matrix/2906-construct-product-matrix/Solution.java) · [📖](./matrix/2906-construct-product-matrix/README.md) | `O(n·m)` | `O(1)` |
 | 3483 | [Unique 3-Digit Even Numbers](https://leetcode.com/problems/unique-3-digit-even-numbers/) | 🟢 Easy | Counting | [Java](./arrays/3483-unique-3-digit-even-numbers/Solution.java) · [📖](./arrays/3483-unique-3-digit-even-numbers/README.md) | `O(1)` | `O(1)` |
 | 3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | 🟢 Easy | Strings | [Java](./strings/3498-reverse-degree-of-a-string/Solution.java) · [📖](./strings/3498-reverse-degree-of-a-string/README.md) | `O(n)` | `O(1)` |
@@ -156,7 +157,7 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 <tr>
 <td align="center" width="25%">🌳<br/><b><a href="./trees">Trees & BST</a></b><br/><sub><code>/trees</code></sub><br/><img src="https://img.shields.io/badge/solved-5-00B8A3?style=flat-square" alt="trees"/></td>
 <td align="center" width="25%">🔢<br/><b><a href="./arrays">Arrays & Hashing</a></b><br/><sub><code>/arrays</code></sub><br/><img src="https://img.shields.io/badge/solved-14-00B8A3?style=flat-square" alt="arrays"/></td>
-<td align="center" width="25%">👉👈<br/><b><a href="./two-pointers">Two Pointers</a></b><br/><sub><code>/two-pointers</code></sub><br/><img src="https://img.shields.io/badge/solved-5-00B8A3?style=flat-square" alt="two-pointers"/></td>
+<td align="center" width="25%">👉👈<br/><b><a href="./two-pointers">Two Pointers</a></b><br/><sub><code>/two-pointers</code></sub><br/><img src="https://img.shields.io/badge/solved-6-00B8A3?style=flat-square" alt="two-pointers"/></td>
 <td align="center" width="25%">🔗<br/><b><a href="./linked-lists">Linked Lists</a></b><br/><sub><code>/linked-lists</code></sub><br/><img src="https://img.shields.io/badge/solved-3-00B8A3?style=flat-square" alt="linked-lists"/></td>
 </tr>
 <tr>
@@ -242,7 +243,7 @@ Little things that turn ✅ Accepted into ❌ Wrong Answer:
 
 - [ ] 🌳 Finish the core BST problems (search, insert, delete, validate, k-th smallest)
 - [x] 🧩 Solve **[1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/)** (Hard)
-- [ ] 💯 Reach 100 problems solved (63/100 so far)
+- [ ] 💯 Reach 100 problems solved (64/100 so far)
 - [ ] 🔥 Keep a 30-day streak
 - [ ] 📚 Cover all 8 topics above
 - [ ] 👾 Defeat 10 bosses (7/10 Hards so far)
