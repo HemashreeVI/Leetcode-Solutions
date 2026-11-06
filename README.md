@@ -8,6 +8,7 @@
 <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
 <img src="https://img.shields.io/badge/Focus-Trees_&_BSTs-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="focus"/>
 <img src="https://img.shields.io/github/last-commit/HemashreeVI/leetcode-solutions?style=for-the-badge&color=00B8A3&label=last%20solved" alt="last commit"/>
+<a href="https://github.com/HemashreeVI/leetcode-solutions/actions/workflows/java-tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/HemashreeVI/leetcode-solutions/java-tests.yml?branch=main&style=for-the-badge&label=tests&logo=githubactions&logoColor=white" alt="tests"/></a>
 </p>
 
 <p>
@@ -17,7 +18,7 @@
 <img src="https://img.shields.io/badge/Total-63-8B5CF6?style=flat-square" alt="Total"/>
 </p>
 
-**[📚 Solutions](#-solutions)** · **[🗂️ By topic](#%EF%B8%8F-by-topic)** · **[🧠 How I write solutions](#-how-i-write-each-solution)** · **[🎯 Goals](#-goals)**
+**[🎮 Player card](#-player-card)** · **[👾 Boss fights](#-boss-fights)** · **[📚 Solutions](#-solutions)** · **[🗂️ By topic](#%EF%B8%8F-by-topic)** · **[🪤 Traps](#-traps-i-learned-to-dodge)** · **[🎯 Goals](#-goals)**
 
 </div>
 
@@ -42,6 +43,40 @@ I'm learning data structures and algorithms in **Java**, starting from zero and 
 - 🪜 **Step-by-step approach:** how to get from brute force to optimal
 - ⏱️ **Complexity:** time and space for every solution
 - 💬 **Commented code:** readable months later, by anyone
+
+## 🎮 Player card
+
+```text
++--------------------------------------------------------------+
+|  PLAYER   Hemashree                    CLASS   Java Knight   |
+|  LEVEL    63 problems slain            NEXT    100           |
+|  XP       [###################-----------]  63%              |
+|                                                              |
+|  EASY   36  ####################################             |
+|  MEDIUM 20  ####################                             |
+|  HARD    7  #######                                          |
+|                                                              |
+|  PASSIVE  O(1) extra space in 35 solutions                   |
+|  ARMOR    56 Java solutions auto-tested on every push        |
+|  QUEST    Binary Search Trees (in progress)                  |
++--------------------------------------------------------------+
+```
+
+## 👾 Boss fights
+
+Every 🔴 Hard is a boss. Here's the weak spot that took each one down:
+
+| Boss | HP | Weak spot | Loot |
+|---|:-:|---|:-:|
+| [4. Median of Two Sorted Arrays](./binary-search/0004-median-of-two-sorted-arrays/README.md) | 🔴 | Don't merge. Binary-search *where to cut* the smaller array so every left value ≤ every right value | `O(log min(m,n))` |
+| [25. Reverse Nodes in k-Group](./linked-lists/0025-reverse-nodes-in-k-group/README.md) | 🔴 | Check that k nodes exist, reverse only that block, stitch it back. Leftovers stay put | `O(n)` · `O(1)` |
+| [32. Longest Valid Parentheses](./dp/0032-longest-valid-parentheses/README.md) | 🔴 | `dp[i]` = longest valid run *ending* at `i`; only a `)` can end one | `O(n)` |
+| [42. Trapping Rain Water](./two-pointers/0042-trapping-rain-water/README.md) | 🔴 | Two pointers: the side with the *shorter* wall decides the water, so settle it first | `O(n)` · `O(1)` |
+| [44. Wildcard Matching](./dp/0044-wildcard-matching/README.md) | 🔴 | `*` either matches nothing or swallows one more character and stays | `O(m·n)` |
+| [224. Basic Calculator](./stacks/0224-basic-calculator/README.md) | 🔴 | It's just a running sum; `(` saves the result and sign on a stack, `)` brings them back | `O(n)` |
+| [1569. Reorder Array to Get Same BST](./trees/1569-number-of-ways-to-reorder-array-to-get-same-bst/README.md) | 🔴 | Root stays first; left and right subtrees interleave freely, so multiply by `C(left+right, left)` from Pascal's triangle | `O(n²)` |
+
+> 🏆 **Final boss defeated:** 1569 was the hardest so far. Combinatorics, recursion *and* modulo arithmetic in one problem.
 
 ## 📚 Solutions
 
@@ -190,6 +225,19 @@ flowchart LR
     E --> F["📝 Commit with<br/>complexity notes"]
 ```
 
+## 🪤 Traps I learned to dodge
+
+Little things that turn ✅ Accepted into ❌ Wrong Answer:
+
+| Trap | Where it bites | The fix |
+|---|---|---|
+| 💥 Integer overflow | 1569 (the answer is astronomically large) | Use `long` and take `% 1_000_000_007` after every multiply |
+| 🕳️ Cutting at the very edge | 4 (a cut can take 0 or all elements of an array) | Use `Integer.MIN_VALUE` / `MAX_VALUE` as "nothing here" sentinels |
+| 📭 Popping an empty stack | 20 (a `)` with nothing to match) | Check `isEmpty()` before you `pop()` |
+| 🪙 Impossible amounts | 322 (no coin combo makes the amount) | Fill the table with "infinity" and return `-1` if it never changes |
+| 🐇 Recomputing the same thing | 70, 509, 198 | Notice it's Fibonacci in disguise: two variables, `O(1)` space |
+| 🔁 Moving one pointer only | 42 | Always move the pointer on the side with the shorter wall |
+
 ## 🎯 Goals
 
 - [ ] 🌳 Finish the core BST problems (search, insert, delete, validate, k-th smallest)
@@ -197,6 +245,8 @@ flowchart LR
 - [ ] 💯 Reach 100 problems solved (63/100 so far)
 - [ ] 🔥 Keep a 30-day streak
 - [ ] 📚 Cover all 8 topics above
+- [ ] 👾 Defeat 10 bosses (7/10 Hards so far)
+- [ ] 🧙 Unlock Graphs, Heaps and Tries as new topics
 
 ## 🧰 Tools
 
@@ -209,7 +259,7 @@ flowchart LR
 **[Hemashree V I](https://hemashreevi.github.io)** · B.Tech CSE (Cyber Physical Systems), VIT Chennai
 
 <a href="https://hemashreevi.github.io"><img src="https://img.shields.io/badge/Portfolio-8B5CF6?style=flat-square&logo=googlechrome&logoColor=white" alt="Portfolio"/></a>
-<a href="https://www.linkedin.com/in/hema-shree-373622289"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="https://www.linkedin.com/in/hema-shree272005"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://leetcode.com/u/hemashree_272005/"><img src="https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black" alt="LeetCode"/></a>
 
 <sub>⭐ Star this repo if a solution helped you understand a problem.</sub>
