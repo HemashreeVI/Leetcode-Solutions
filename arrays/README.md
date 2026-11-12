@@ -1,6 +1,6 @@
 # 🔢 Arrays & Hashing
 
-14 problems solved in this topic. Open a problem for the full write-up (intuition, approach, flowchart, dry run, complexity).
+15 problems solved in this topic. Open a problem for the full write-up (intuition, approach, flowchart, dry run, complexity).
 
 | Problem | Difficulty | Code | Key idea |
 |---|:-:|:-:|---|
@@ -14,6 +14,7 @@
 | [1672. Richest Customer Wealth](./1672-richest-customer-wealth/README.md) | 🟢 Easy | [Solution.java](./1672-richest-customer-wealth/Solution.java) | A 2D array is just an array of arrays: the outer loop picks the row, the inner loop walks it. |
 | [1920. Build Array from Permutation](./1920-build-array-from-permutation/README.md) | 🟢 Easy | [Solution.java](./1920-build-array-from-permutation/Solution.java) | Using array values as indices is a common pattern in permutation problems. |
 | [1929. Concatenation of Array](./1929-concatenation-of-array/README.md) | 🟢 Easy | [Solution.java](./1929-concatenation-of-array/Solution.java) | Index arithmetic (`i + n`) lets one loop fill multiple places at once. |
+| [3105. Longest Strictly Increasing or Strictly Decreasing Subarray](./3105-longest-strictly-increasing-or-strictly-decreasing-subarray/README.md) | 🟢 Easy | [Solution.java](./3105-longest-strictly-increasing-or-strictly-decreasing-subarray/Solution.java) | "Longest contiguous run" → track the run **ending here**; two directions = **two counters** that reset each other. |
 | [3483. Unique 3-Digit Even Numbers](./3483-unique-3-digit-even-numbers/README.md) | 🟢 Easy | [Solution.java](./3483-unique-3-digit-even-numbers/Solution.java) | When the answer space is **small and fixed**, enumerate answers and validate them instead of generating combinations. |
 | [3550. Smallest Index With Digit Sum Equal to Index](./3550-smallest-index-with-digit-sum-equal-to-index/README.md) | 🟢 Easy | [Solution.java](./3550-smallest-index-with-digit-sum-equal-to-index/Solution.java) | "Smallest index such that…" → a left-to-right scan with an **early return**. |
 | [3551. Minimum Swaps to Sort by Digit Sum](./3551-minimum-swaps-to-sort-by-digit-sum/README.md) | 🟡 Medium | [Solution.java](./3551-minimum-swaps-to-sort-by-digit-sum/Solution.java) | "Minimum swaps to sort" → **cycle decomposition**: `answer = n − cycles`. |
