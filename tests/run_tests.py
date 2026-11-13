@@ -69,6 +69,7 @@ T = {
 "0054": 'H.eq(s.spiralOrder(new int[][]{{1,2,3},{4,5,6},{7,8,9}}),"[1, 2, 3, 6, 9, 8, 7, 4, 5]"); H.eq(s.spiralOrder(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12}}),"[1, 2, 3, 4, 8, 12, 11, 10, 9, 5, 6, 7]"); H.eq(s.spiralOrder(new int[][]{{1},{2},{3}}),"[1, 2, 3]");',
 "0073": 'int[][] m={{1,1,1},{1,0,1},{1,1,1}}; s.setZeroes(m); H.eq(H.a2(m),"[[1, 0, 1], [0, 0, 0], [1, 0, 1]]"); int[][] n={{0,1,2,0},{3,4,5,2},{1,3,1,5}}; s.setZeroes(n); H.eq(H.a2(n),"[[0, 0, 0, 0], [0, 4, 5, 0], [0, 3, 1, 0]]");',
 "2906": 'H.eq(H.a2(s.constructProductMatrix(new int[][]{{1,2},{3,4}})),"[[24, 12], [8, 6]]"); H.eq(H.a2(s.constructProductMatrix(new int[][]{{12345},{2},{1}})),"[[2], [0], [0]]");',
+"0098": 'H.eq(s.isValidBST(H.tree(2,1,3)),true); H.eq(s.isValidBST(H.tree(5,1,4,null,null,3,6)),false); H.eq(s.isValidBST(H.tree(5,4,6,null,null,3,7)),false); H.eq(s.isValidBST(H.tree(2,2,2)),false); H.eq(s.isValidBST(H.tree(2147483647)),true); H.eq(s.isValidBST(H.tree(-2147483648,null,2147483647)),true); H.eq(s.isValidBST(H.tree(1)),true);',
 "0103": 'H.eq(s.zigzagLevelOrder(H.tree(3,9,20,null,null,15,7)),"[[3], [20, 9], [15, 7]]"); H.eq(s.zigzagLevelOrder(null),"[]");',
 "0114": 'TreeNode r=H.tree(1,2,5,3,4,null,6); s.flatten(r); StringBuilder b=new StringBuilder(); for(TreeNode t=r;t!=null;t=t.right){ if(t.left!=null) throw new AssertionError("left"); b.append(t.val);} H.eq(b,"123456");',
 "0129": 'H.eq(s.sumNumbers(H.tree(1,2,3)),25); H.eq(s.sumNumbers(H.tree(4,9,0,5,1)),1026);',
