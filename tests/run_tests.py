@@ -86,6 +86,7 @@ T = {
 }
 fails = 0; seen = set()
 for path in sorted(glob.glob(REPO + "/**/Solution.java", recursive=True)):
+    if os.sep + "build" + os.sep in path: continue   # skip copies from a previous run
     num = os.path.basename(os.path.dirname(path))[:4]
     seen.add(num)
     if num not in T: print("NO TEST", path); fails += 1; continue
