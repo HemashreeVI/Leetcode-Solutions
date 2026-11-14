@@ -74,6 +74,7 @@ T = {
 "0114": 'TreeNode r=H.tree(1,2,5,3,4,null,6); s.flatten(r); StringBuilder b=new StringBuilder(); for(TreeNode t=r;t!=null;t=t.right){ if(t.left!=null) throw new AssertionError("left"); b.append(t.val);} H.eq(b,"123456");',
 "0129": 'H.eq(s.sumNumbers(H.tree(1,2,3)),25); H.eq(s.sumNumbers(H.tree(4,9,0,5,1)),1026);',
 "0199": 'H.eq(s.rightSideView(H.tree(1,2,3,null,5,null,4)),"[1, 3, 4]"); H.eq(s.rightSideView(H.tree(1,2,3,4,null,null,null,5)),"[1, 3, 4, 5]");',
+"0230": 'H.eq(s.kthSmallest(H.tree(3,1,4,null,2),1),1); H.eq(s.kthSmallest(H.tree(5,3,6,2,4,null,null,1),3),3); H.eq(s.kthSmallest(H.tree(5,3,6,2,4,null,null,1),6),6); H.eq(s.kthSmallest(H.tree(1),1),1); H.eq(s.kthSmallest(H.tree(2,1,3),2),2);',
 "1569": 'H.eq(s.numOfWays(new int[]{2,1,3}),1); H.eq(s.numOfWays(new int[]{3,4,5,1,2}),5); H.eq(s.numOfWays(new int[]{1,2,3}),0); int[] big=new int[1000]; for(int i=0;i<1000;i++) big[i]=i+1; H.eq(s.numOfWays(big),0);',
 "0032": 'H.eq(s.longestValidParentheses("(()"),2); H.eq(s.longestValidParentheses(")()())"),4); H.eq(s.longestValidParentheses(""),0); H.eq(s.longestValidParentheses("()(())"),6);',
 "0044": 'H.eq(s.isMatch("aa","a"),false); H.eq(s.isMatch("aa","*"),true); H.eq(s.isMatch("cb","?a"),false); H.eq(s.isMatch("adceb","*a*b"),true); H.eq(s.isMatch("acdcb","a*c?b"),false);',
