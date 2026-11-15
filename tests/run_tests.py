@@ -17,6 +17,7 @@ class H {
   static String a(int[] x) { return java.util.Arrays.toString(x); }
   static String a2(int[][] x) { return java.util.Arrays.deepToString(x); }
   static ListNode list(int... v) { ListNode d = new ListNode(); ListNode t = d; for (int x : v) { t.next = new ListNode(x); t = t.next; } return d.next; }
+  static String in(TreeNode n) { java.util.List<Integer> o = new java.util.ArrayList<>(); java.util.Deque<TreeNode> st = new java.util.ArrayDeque<>(); while (n != null || !st.isEmpty()) { while (n != null) { st.push(n); n = n.left; } n = st.pop(); o.add(n.val); n = n.right; } return o.toString(); }
   static String s(ListNode n) { StringBuilder b = new StringBuilder(); while (n != null) { b.append(n.val).append(n.next != null ? "," : ""); n = n.next; } return b.toString(); }
   // level-order build, null = Integer null
   static TreeNode tree(Integer... v) { if (v.length == 0 || v[0] == null) return null; TreeNode r = new TreeNode(v[0]); java.util.Queue<TreeNode> q = new java.util.LinkedList<>(); q.add(r); int i = 1; while (i < v.length) { TreeNode n = q.poll(); if (i < v.length && v[i] != null) { n.left = new TreeNode(v[i]); q.add(n.left); } i++; if (i < v.length && v[i] != null) { n.right = new TreeNode(v[i]); q.add(n.right); } i++; } return r; }
@@ -75,6 +76,7 @@ T = {
 "0129": 'H.eq(s.sumNumbers(H.tree(1,2,3)),25); H.eq(s.sumNumbers(H.tree(4,9,0,5,1)),1026);',
 "0199": 'H.eq(s.rightSideView(H.tree(1,2,3,null,5,null,4)),"[1, 3, 4]"); H.eq(s.rightSideView(H.tree(1,2,3,4,null,null,null,5)),"[1, 3, 4, 5]");',
 "0230": 'H.eq(s.kthSmallest(H.tree(3,1,4,null,2),1),1); H.eq(s.kthSmallest(H.tree(5,3,6,2,4,null,null,1),3),3); H.eq(s.kthSmallest(H.tree(5,3,6,2,4,null,null,1),6),6); H.eq(s.kthSmallest(H.tree(1),1),1); H.eq(s.kthSmallest(H.tree(2,1,3),2),2);',
+"0450": 'TreeNode a=s.deleteNode(H.tree(5,3,6,2,4,null,7),3); H.eq(H.in(a),"[2, 4, 5, 6, 7]"); H.eq(a.val,5); H.eq(a.left.val,4); H.eq(H.in(s.deleteNode(H.tree(5,3,6,2,4,null,7),0)),"[2, 3, 4, 5, 6, 7]"); H.eq(s.deleteNode(H.tree(),0),null); TreeNode r=s.deleteNode(H.tree(5,3,6,2,4,null,7),5); H.eq(H.in(r),"[2, 3, 4, 6, 7]"); H.eq(r.val,6); H.eq(s.deleteNode(H.tree(1),1),null); H.eq(H.in(s.deleteNode(H.tree(2,1),2)),"[1]");',
 "1569": 'H.eq(s.numOfWays(new int[]{2,1,3}),1); H.eq(s.numOfWays(new int[]{3,4,5,1,2}),5); H.eq(s.numOfWays(new int[]{1,2,3}),0); int[] big=new int[1000]; for(int i=0;i<1000;i++) big[i]=i+1; H.eq(s.numOfWays(big),0);',
 "0032": 'H.eq(s.longestValidParentheses("(()"),2); H.eq(s.longestValidParentheses(")()())"),4); H.eq(s.longestValidParentheses(""),0); H.eq(s.longestValidParentheses("()(())"),6);',
 "0044": 'H.eq(s.isMatch("aa","a"),false); H.eq(s.isMatch("aa","*"),true); H.eq(s.isMatch("cb","?a"),false); H.eq(s.isMatch("adceb","*a*b"),true); H.eq(s.isMatch("acdcb","a*c?b"),false);',
