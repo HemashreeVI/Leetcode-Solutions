@@ -12,10 +12,10 @@
 </p>
 
 <p>
-<img src="https://img.shields.io/badge/Easy-37-00B8A3?style=flat-square" alt="Easy"/>
+<img src="https://img.shields.io/badge/Easy-38-00B8A3?style=flat-square" alt="Easy"/>
 <img src="https://img.shields.io/badge/Medium-25-FFC01E?style=flat-square" alt="Medium"/>
 <img src="https://img.shields.io/badge/Hard-7-FF375F?style=flat-square" alt="Hard"/>
-<img src="https://img.shields.io/badge/Total-69-8B5CF6?style=flat-square" alt="Total"/>
+<img src="https://img.shields.io/badge/Total-70-8B5CF6?style=flat-square" alt="Total"/>
 </p>
 
 **[🎮 Player card](#-player-card)** · **[👾 Boss fights](#-boss-fights)** · **[📚 Solutions](#-solutions)** · **[🗂️ By topic](#%EF%B8%8F-by-topic)** · **[🪤 Traps](#-traps-i-learned-to-dodge)** · **[🎯 Goals](#-goals)**
@@ -49,16 +49,16 @@ I'm learning data structures and algorithms in **Java**, starting from zero and 
 ```text
 +--------------------------------------------------------------+
 |  PLAYER   Hemashree                    CLASS   Java Knight   |
-|  LEVEL    69 problems slain            NEXT    100           |
-|  XP       [#####################---------]  69%              |
+|  LEVEL    70 problems slain            NEXT    100           |
+|  XP       [#####################---------]  70%              |
 |                                                              |
-|  EASY   37  #####################################            |
+|  EASY   38  ######################################           |
 |  MEDIUM 25  #########################                        |
 |  HARD    7  #######                                          |
 |                                                              |
-|  PASSIVE  O(1) extra space in 37 solutions                   |
-|  ARMOR    62 Java solutions auto-tested on every push        |
-|  QUEST    Binary Search Trees (in progress)                  |
+|  PASSIVE  O(1) extra space in 38 solutions                   |
+|  ARMOR    63 Java solutions auto-tested on every push        |
+|  QUEST    Binary Search Trees (core set cleared)             |
 +--------------------------------------------------------------+
 ```
 
@@ -133,6 +133,7 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 | 322 | [Coin Change](https://leetcode.com/problems/coin-change/) | 🟡 Medium | DP | [Java](./dp/0322-coin-change/Solution.java) · [📖](./dp/0322-coin-change/README.md) | `O(amount·k)` | `O(amount)` |
 | 450 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | 🟡 Medium | Trees / BST | [Java](./trees/0450-delete-node-in-a-bst/Solution.java) · [📖](./trees/0450-delete-node-in-a-bst/README.md) | `O(h)` | `O(h)` |
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 🟢 Easy | DP | [Java](./dp/0509-fibonacci-number/Solution.java) · [📖](./dp/0509-fibonacci-number/README.md) | `O(n)` | `O(1)` |
+| 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | 🟢 Easy | Trees / BST | [Java](./trees/0700-search-in-a-binary-search-tree/Solution.java) · [📖](./trees/0700-search-in-a-binary-search-tree/README.md) | `O(h)` | `O(1)` |
 | 701 | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | 🟡 Medium | Trees / BST | [Java](./trees/0701-insert-into-a-binary-search-tree/Solution.java) · [📖](./trees/0701-insert-into-a-binary-search-tree/README.md) | `O(h)` | `O(1)` |
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | 🟢 Easy | Two Pointers | [Java](./two-pointers/0977-squares-of-a-sorted-array/Solution.java) · [📖](./two-pointers/0977-squares-of-a-sorted-array/README.md) | `O(n)` | `O(n)` |
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | 🟢 Easy | Arrays | [Java](./arrays/1295-find-numbers-with-even-number-of-digits/Solution.java) · [📖](./arrays/1295-find-numbers-with-even-number-of-digits/README.md) | `O(n)` | `O(1)` |
@@ -160,7 +161,7 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 
 <table>
 <tr>
-<td align="center" width="25%">🌳<br/><b><a href="./trees">Trees & BST</a></b><br/><sub><code>/trees</code></sub><br/><img src="https://img.shields.io/badge/solved-9-00B8A3?style=flat-square" alt="trees"/></td>
+<td align="center" width="25%">🌳<br/><b><a href="./trees">Trees & BST</a></b><br/><sub><code>/trees</code></sub><br/><img src="https://img.shields.io/badge/solved-10-00B8A3?style=flat-square" alt="trees"/></td>
 <td align="center" width="25%">🔢<br/><b><a href="./arrays">Arrays & Hashing</a></b><br/><sub><code>/arrays</code></sub><br/><img src="https://img.shields.io/badge/solved-15-00B8A3?style=flat-square" alt="arrays"/></td>
 <td align="center" width="25%">👉👈<br/><b><a href="./two-pointers">Two Pointers</a></b><br/><sub><code>/two-pointers</code></sub><br/><img src="https://img.shields.io/badge/solved-6-00B8A3?style=flat-square" alt="two-pointers"/></td>
 <td align="center" width="25%">🔗<br/><b><a href="./linked-lists">Linked Lists</a></b><br/><sub><code>/linked-lists</code></sub><br/><img src="https://img.shields.io/badge/solved-3-00B8A3?style=flat-square" alt="linked-lists"/></td>
@@ -246,9 +247,9 @@ Little things that turn ✅ Accepted into ❌ Wrong Answer:
 
 ## 🎯 Goals
 
-- [ ] 🌳 Finish the core BST problems (search, insert, delete, validate, k-th smallest)
+- [x] 🌳 Finish the core BST problems (search, insert, delete, validate, k-th smallest)
 - [x] 🧩 Solve **[1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/)** (Hard)
-- [ ] 💯 Reach 100 problems solved (69/100 so far)
+- [ ] 💯 Reach 100 problems solved (70/100 so far)
 - [ ] 🔥 Keep a 30-day streak
 - [ ] 📚 Cover all 8 topics above
 - [ ] 👾 Defeat 10 bosses (7/10 Hards so far)
