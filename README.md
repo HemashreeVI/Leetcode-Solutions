@@ -12,10 +12,10 @@
 </p>
 
 <p>
-<img src="https://img.shields.io/badge/Easy-38-00B8A3?style=flat-square" alt="Easy"/>
+<img src="https://img.shields.io/badge/Easy-39-00B8A3?style=flat-square" alt="Easy"/>
 <img src="https://img.shields.io/badge/Medium-26-FFC01E?style=flat-square" alt="Medium"/>
 <img src="https://img.shields.io/badge/Hard-7-FF375F?style=flat-square" alt="Hard"/>
-<img src="https://img.shields.io/badge/Total-71-8B5CF6?style=flat-square" alt="Total"/>
+<img src="https://img.shields.io/badge/Total-72-8B5CF6?style=flat-square" alt="Total"/>
 </p>
 
 **[🎮 Player card](#-player-card)** · **[👾 Boss fights](#-boss-fights)** · **[📚 Solutions](#-solutions)** · **[🗂️ By topic](#%EF%B8%8F-by-topic)** · **[🪤 Traps](#-traps-i-learned-to-dodge)** · **[🎯 Goals](#-goals)**
@@ -49,15 +49,15 @@ I'm learning data structures and algorithms in **Java**, starting from zero and 
 ```text
 +--------------------------------------------------------------+
 |  PLAYER   Hemashree                    CLASS   Java Knight   |
-|  LEVEL    71 problems slain            NEXT    100           |
-|  XP       [#####################---------]  71%              |
+|  LEVEL    72 problems slain            NEXT    100           |
+|  XP       [######################--------]  72%              |
 |                                                              |
-|  EASY   38  ######################################           |
+|  EASY   39  #######################################          |
 |  MEDIUM 26  ##########################                       |
 |  HARD    7  #######                                          |
 |                                                              |
 |  PASSIVE  O(1) extra space in 38 solutions                   |
-|  ARMOR    64 Java solutions auto-tested on every push        |
+|  ARMOR    65 Java solutions auto-tested on every push        |
 |  QUEST    Graphs (in progress)                               |
 +--------------------------------------------------------------+
 ```
@@ -136,6 +136,7 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 | 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 🟢 Easy | DP | [Java](./dp/0509-fibonacci-number/Solution.java) · [📖](./dp/0509-fibonacci-number/README.md) | `O(n)` | `O(1)` |
 | 700 | [Search in a Binary Search Tree](https://leetcode.com/problems/search-in-a-binary-search-tree/) | 🟢 Easy | Trees / BST | [Java](./trees/0700-search-in-a-binary-search-tree/Solution.java) · [📖](./trees/0700-search-in-a-binary-search-tree/README.md) | `O(h)` | `O(1)` |
 | 701 | [Insert into a Binary Search Tree](https://leetcode.com/problems/insert-into-a-binary-search-tree/) | 🟡 Medium | Trees / BST | [Java](./trees/0701-insert-into-a-binary-search-tree/Solution.java) · [📖](./trees/0701-insert-into-a-binary-search-tree/README.md) | `O(h)` | `O(1)` |
+| 733 | [Flood Fill](https://leetcode.com/problems/flood-fill/) | 🟢 Easy | Graphs / DFS | [Java](./graphs/0733-flood-fill/Solution.java) · [📖](./graphs/0733-flood-fill/README.md) | `O(m·n)` | `O(m·n)` |
 | 977 | [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | 🟢 Easy | Two Pointers | [Java](./two-pointers/0977-squares-of-a-sorted-array/Solution.java) · [📖](./two-pointers/0977-squares-of-a-sorted-array/README.md) | `O(n)` | `O(n)` |
 | 1295 | [Find Numbers with Even Number of Digits](https://leetcode.com/problems/find-numbers-with-even-number-of-digits/) | 🟢 Easy | Arrays | [Java](./arrays/1295-find-numbers-with-even-number-of-digits/Solution.java) · [📖](./arrays/1295-find-numbers-with-even-number-of-digits/README.md) | `O(n)` | `O(1)` |
 | 1317 | [Convert Integer to the Sum of Two No-Zero Integers](https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/) | 🟢 Easy | Math | [Java](./math/1317-convert-integer-to-the-sum-of-two-no-zero-integers/Solution.java) · [📖](./math/1317-convert-integer-to-the-sum-of-two-no-zero-integers/README.md) | `O(n log n)` | `O(1)` |
@@ -180,7 +181,7 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 <td align="center">🗄️<br/><b><a href="./sql">SQL</a></b><br/><sub><code>/sql</code></sub><br/><img src="https://img.shields.io/badge/solved-6-00B8A3?style=flat-square" alt="sql"/></td>
 </tr>
 <tr>
-<td align="center">🕸️<br/><b><a href="./graphs">Graphs</a></b><br/><sub><code>/graphs</code></sub><br/><img src="https://img.shields.io/badge/solved-1-00B8A3?style=flat-square" alt="graphs"/></td>
+<td align="center">🕸️<br/><b><a href="./graphs">Graphs</a></b><br/><sub><code>/graphs</code></sub><br/><img src="https://img.shields.io/badge/solved-2-00B8A3?style=flat-square" alt="graphs"/></td>
 </tr>
 </table>
 
@@ -254,7 +255,7 @@ Little things that turn ✅ Accepted into ❌ Wrong Answer:
 - [x] 🌳 Finish the core BST problems (search, insert, delete, validate, k-th smallest)
 - [ ] 🕸️ Core graph problems (islands, flood fill, clone graph, course schedule, rotting oranges)
 - [x] 🧩 Solve **[1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/)** (Hard)
-- [ ] 💯 Reach 100 problems solved (71/100 so far)
+- [ ] 💯 Reach 100 problems solved (72/100 so far)
 - [ ] 🔥 Keep a 30-day streak
 - [ ] 📚 Cover all 8 topics above
 - [ ] 👾 Defeat 10 bosses (7/10 Hards so far)
