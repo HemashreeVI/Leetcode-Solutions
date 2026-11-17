@@ -2,20 +2,20 @@
 
 <img src="./banner.svg" alt="LeetCode Solutions — clean Java solutions, one problem at a time" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=2600&pause=900&color=FFA116&center=true&vCenter=true&width=700&height=40&lines=%E2%98%95+Every+solution+in+clean%2C+commented+Java;%F0%9F%A7%A0+Intuition+first%2C+code+second;%E2%8F%B1%EF%B8%8F+Time+%26+space+complexity+for+every+problem;%F0%9F%8C%B3+Currently+grinding%3A+Binary+Search+Trees;%F0%9F%8F%86+Boss+defeated%3A+LeetCode+1569+%28Hard%29" alt="typing intro"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&duration=2600&pause=900&color=FFA116&center=true&vCenter=true&width=700&height=40&lines=%E2%98%95+Every+solution+in+clean%2C+commented+Java;%F0%9F%A7%A0+Intuition+first%2C+code+second;%E2%8F%B1%EF%B8%8F+Time+%26+space+complexity+for+every+problem;%F0%9F%8C%B3+Currently+grinding%3A+Graphs;%F0%9F%8F%86+Boss+defeated%3A+LeetCode+1569+%28Hard%29" alt="typing intro"/>
 
 <p>
 <img src="https://img.shields.io/badge/Language-Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
-<img src="https://img.shields.io/badge/Focus-Trees_&_BSTs-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="focus"/>
+<img src="https://img.shields.io/badge/Focus-Graphs-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="focus"/>
 <img src="https://img.shields.io/github/last-commit/HemashreeVI/leetcode-solutions?style=for-the-badge&color=00B8A3&label=last%20solved" alt="last commit"/>
 <a href="https://github.com/HemashreeVI/leetcode-solutions/actions/workflows/java-tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/HemashreeVI/leetcode-solutions/java-tests.yml?branch=main&style=for-the-badge&label=tests&logo=githubactions&logoColor=white" alt="tests"/></a>
 </p>
 
 <p>
 <img src="https://img.shields.io/badge/Easy-38-00B8A3?style=flat-square" alt="Easy"/>
-<img src="https://img.shields.io/badge/Medium-25-FFC01E?style=flat-square" alt="Medium"/>
+<img src="https://img.shields.io/badge/Medium-26-FFC01E?style=flat-square" alt="Medium"/>
 <img src="https://img.shields.io/badge/Hard-7-FF375F?style=flat-square" alt="Hard"/>
-<img src="https://img.shields.io/badge/Total-70-8B5CF6?style=flat-square" alt="Total"/>
+<img src="https://img.shields.io/badge/Total-71-8B5CF6?style=flat-square" alt="Total"/>
 </p>
 
 **[🎮 Player card](#-player-card)** · **[👾 Boss fights](#-boss-fights)** · **[📚 Solutions](#-solutions)** · **[🗂️ By topic](#%EF%B8%8F-by-topic)** · **[🪤 Traps](#-traps-i-learned-to-dodge)** · **[🎯 Goals](#-goals)**
@@ -49,16 +49,16 @@ I'm learning data structures and algorithms in **Java**, starting from zero and 
 ```text
 +--------------------------------------------------------------+
 |  PLAYER   Hemashree                    CLASS   Java Knight   |
-|  LEVEL    70 problems slain            NEXT    100           |
-|  XP       [#####################---------]  70%              |
+|  LEVEL    71 problems slain            NEXT    100           |
+|  XP       [#####################---------]  71%              |
 |                                                              |
 |  EASY   38  ######################################           |
-|  MEDIUM 25  #########################                        |
+|  MEDIUM 26  ##########################                       |
 |  HARD    7  #######                                          |
 |                                                              |
 |  PASSIVE  O(1) extra space in 38 solutions                   |
-|  ARMOR    63 Java solutions auto-tested on every push        |
-|  QUEST    Binary Search Trees (core set cleared)             |
+|  ARMOR    64 Java solutions auto-tested on every push        |
+|  QUEST    Graphs (in progress)                               |
 +--------------------------------------------------------------+
 ```
 
@@ -126,6 +126,7 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 | 196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/) | 🟢 Easy | SQL | [SQL](./sql/0196-delete-duplicate-emails/solution.sql) · [📖](./sql/0196-delete-duplicate-emails/README.md) | – | – |
 | 198 | [House Robber](https://leetcode.com/problems/house-robber/) | 🟡 Medium | DP | [Java](./dp/0198-house-robber/Solution.java) · [📖](./dp/0198-house-robber/README.md) | `O(n)` | `O(1)` |
 | 199 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | 🟡 Medium | Trees / DFS | [Java](./trees/0199-binary-tree-right-side-view/Solution.java) · [📖](./trees/0199-binary-tree-right-side-view/README.md) | `O(n)` | `O(h)` |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 🟡 Medium | Graphs / BFS | [Java](./graphs/0200-number-of-islands/Solution.java) · [📖](./graphs/0200-number-of-islands/README.md) | `O(m·n)` | `O(min(m,n))` |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/) | 🟡 Medium | Math | [Java](./math/0204-count-primes/Solution.java) · [📖](./math/0204-count-primes/README.md) | `O(n log log n)` | `O(n)` |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | 🟡 Medium | Heap | [Java](./arrays/0215-kth-largest-element-in-an-array/Solution.java) · [📖](./arrays/0215-kth-largest-element-in-an-array/README.md) | `O(n log k)` | `O(k)` |
 | 224 | [Basic Calculator](https://leetcode.com/problems/basic-calculator/) | 🔴 Hard | Stack | [Java](./stacks/0224-basic-calculator/Solution.java) · [📖](./stacks/0224-basic-calculator/README.md) | `O(n)` | `O(n)` |
@@ -177,6 +178,9 @@ Every row links to the code and to a 📖 write-up with the **intuition, step-by
 <td align="center">➗<br/><b><a href="./math">Math</a></b><br/><sub><code>/math</code></sub><br/><img src="https://img.shields.io/badge/solved-3-00B8A3?style=flat-square" alt="math"/></td>
 <td align="center">🔲<br/><b><a href="./matrix">Matrix</a></b><br/><sub><code>/matrix</code></sub><br/><img src="https://img.shields.io/badge/solved-3-00B8A3?style=flat-square" alt="matrix"/></td>
 <td align="center">🗄️<br/><b><a href="./sql">SQL</a></b><br/><sub><code>/sql</code></sub><br/><img src="https://img.shields.io/badge/solved-6-00B8A3?style=flat-square" alt="sql"/></td>
+</tr>
+<tr>
+<td align="center">🕸️<br/><b><a href="./graphs">Graphs</a></b><br/><sub><code>/graphs</code></sub><br/><img src="https://img.shields.io/badge/solved-1-00B8A3?style=flat-square" alt="graphs"/></td>
 </tr>
 </table>
 
@@ -248,8 +252,9 @@ Little things that turn ✅ Accepted into ❌ Wrong Answer:
 ## 🎯 Goals
 
 - [x] 🌳 Finish the core BST problems (search, insert, delete, validate, k-th smallest)
+- [ ] 🕸️ Core graph problems (islands, flood fill, clone graph, course schedule, rotting oranges)
 - [x] 🧩 Solve **[1569. Number of Ways to Reorder Array to Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst/)** (Hard)
-- [ ] 💯 Reach 100 problems solved (70/100 so far)
+- [ ] 💯 Reach 100 problems solved (71/100 so far)
 - [ ] 🔥 Keep a 30-day streak
 - [ ] 📚 Cover all 8 topics above
 - [ ] 👾 Defeat 10 bosses (7/10 Hards so far)
